@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Hod kostkou</title>
@@ -13,9 +14,9 @@
 <body>
 <div>
     <div>
-        <img class="kostka" src="/images/kostka-1.svg" />
+        <img class="kostka" th:src="${obrazek}"/>
     </div>
-    <div>Padlo číslo: <span>1</span></div>
+    <div>Padlo číslo: <span th:text="${cislo}">1</span></div>
 </div>
 </body>
 </html>
